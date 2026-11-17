@@ -12,3 +12,6 @@ media_raw/
 
 # X に投稿する動画（GitHub には上げない）
 x_post/
+
+# 引継ぎ資料（PC 内のパスなどを含むため公開しない）
+HANDOFF.md
