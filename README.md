@@ -1,5 +1,7 @@
 # M5Stack ATOM Matrix デモ
 
+日本語 | [English](README.en.md)
+
 M5Stack ATOM Matrix（5×5 フルカラー LED、ボタン、傾きセンサー付き）で動くデモです。
 デスクトップ版 Claude の Code タブに「このPCにM5Stack ATOM Matrixが接続されているので、何かデモをして。」と頼み、Claude が作って書き込みました。
 
