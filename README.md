@@ -7,16 +7,24 @@ M5Stack ATOM Matrix（5×5 フルカラー LED、ボタン、傾きセンサー�
 
 | レインボー | 傾きボール | 文字スクロール | 花火 |
 |---|---|---|---|
-| ![レインボー](media/rainbow.jpg) | （ここに写真） | （ここに写真） | ![花火](media/sparkle.jpg) |
+| ![レインボー](media/rainbow.jpg) | ![傾きボール](media/tilt.gif) | ![文字スクロール](media/text.gif) | ![花火](media/sparkle.jpg) |
 
-**動画**: （ここに動画）
+傾きボールと文字スクロールは動きが見どころなので、短い GIF にしています。
+
+**動画**（クリックすると再生できます。音声なし）
+
+| レインボー | 傾きボール | 文字スクロール | 花火 |
+|---|---|---|---|
+| [rainbow.mp4](media/video/rainbow.mp4)（5秒） | [tilt.mp4](media/video/tilt.mp4)（11秒） | [text.mp4](media/video/text.mp4)（13秒） | [sparkle.mp4](media/video/sparkle.mp4)（6秒） |
 
 <!--
 写真・動画の追加方法:
-1. ファイルを media/ フォルダに入れる（例: media/rainbow.jpg、media/demo.mp4）
-2. 上の「（ここに写真）」を ![レインボー](media/rainbow.jpg) のように書き換える
-3. 動画は GitHub の Web 画面でこの README を編集し、mp4 をドラッグ＆ドロップすると再生できる形で埋め込まれる
-   （リポジトリに入れる場合は 1 ファイル 100MB 未満、できれば 10MB 程度まで。短い GIF なら ![](media/demo.gif) でそのまま動く）
+1. 撮影した元ファイルは media_raw/ に置く（位置情報を含むので .gitignore で除外している）
+2. 位置情報を消して縮小したコピーを media/ に作る
+   - 写真: 切り抜いて保存し直す（メタデータは引き継がない）
+   - 動画: ffmpeg -i IN.mov -map 0:v:0 -an -map_metadata -1 -vf scale=-2:960 -c:v libx264 -crf 28 -movflags +faststart OUT.mp4
+3. README から ![説明](media/xxx.jpg) のように参照する
+4. ページ上で再生ボタン付きの動画にしたいときは、GitHub の Web 画面でこの README を編集し、mp4 をドラッグ＆ドロップする
 -->
 
 ## Claude での操作の流れ
